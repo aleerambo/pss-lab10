@@ -41,9 +41,9 @@ public final class UseListsAndMaps {
          * element of the first list. You can not use any "magic number".
          * (Suggestion: use a temporary variable)
          */
-        final int temp = arrayList.get(0);
-        arrayList.set(arrayList.size()-1, temp);
-        System.out.println(arrayList);
+        final int temp = arrayList.size();
+        arrayList.set(0, arrayList.get(temp-1));
+        arrayList.set(temp-1, temp);
         /*
          * 4) Using a single for-each, print the contents of the arraylist.
          */
