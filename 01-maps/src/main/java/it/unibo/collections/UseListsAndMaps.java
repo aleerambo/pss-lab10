@@ -161,5 +161,12 @@ public final class UseListsAndMaps {
         /*
          * 8) Compute the population of the world
          */
+        long worldPopulation = 0;
+
+        for (final Long l : continentsPopulationMap.values()) {
+			worldPopulation += l;
+		}
+
+        System.out.println("The world population is around: " + worldPopulation);
     }
 }
